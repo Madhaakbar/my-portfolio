@@ -1,0 +1,43 @@
+.Home {
+    height: 300vh;
+}
+
+/* Style Postingan Home */
+.content {
+    padding: 50px;
+}
+
+.card_post {
+    padding: 20px;
+    text-align: left;
+    background-color: #D6D5A8 !important;
+}
+
+.card_img {
+    align-self: center;
+    border-radius: 10px 10px 10px !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_content {
+    flex: 50%;
+    padding: px 20px;
+}
+
+.side {
+    flex: 30%;
+    padding: 20px 20px;
+    background-color: #D6D5A8 !important;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.side .desc_side {
+    margin-top: 10px;
+}
+
+/* Style Postingan Home */
