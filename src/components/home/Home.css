@@ -1,43 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+
 .Home {
     height: 300vh;
 }
 
 /* Style Postingan Home */
-.content {
-    padding: 50px;
-}
-
-.card_post {
-    padding: 20px;
-    text-align: left;
-    background-color: #D6D5A8 !important;
-}
-
-.card_img {
-    align-self: center;
-    border-radius: 10px 10px 10px !important;
-}
-
-.row {
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
     display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-}
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
 
-.main_content {
-    flex: 50%;
-    padding: px 20px;
-}
-
-.side {
+  .card__post {
+    background-color: #816797 !important;
+    height: 200vh;
+  }
+  .side {
+    -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    padding: 20px 20px;
-    background-color: #D6D5A8 !important;
-    border-radius: 5px;
-    text-align: left;
-}
+    padding: 20px;
+    height: 200vh !important;
+  }
 
-.side .desc_side {
+  .side img {
+    margin-top: -20px !important;
+  }
+
+  .side .desc__post {
+    text-align: justify;
+    padding: 10px;
+    margin-top: -5px !important;
+  }
+
+  .desc__post__popular__post {
+    margin-left: -10px;
+    text-align: justify;
+    align-content: center;
+  }
+
+  .side__popular__img__post {
+    align-self: center;
+  }
+  
+  .main__tags {
     margin-top: 10px;
-}
+    border-color: #371B58 !important;
+  }
 
+  .main__tags:hover {
+    background-color: #4C3575 !important;
+  }
+  /* Main column */
+  .main {   
+    -ms-flex:70%; /* IE10 */
+    flex:70%;
+    padding: 20px;
+    color: white;
+  }
+  
+  .main .tittle__post {
+    text-align: left !important;
+    padding: 10px;
+  }
+
+  .main .desc__post {
+    text-align: justify;
+    padding: 10px;
+    margin-top: -30px;
+  }
+
+  .main img {
+    border-radius: 20px !important;
+    margin-top: 25px;
+  }
+  .fakeimg {
+    width: 100%;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
 /* Style Postingan Home */
